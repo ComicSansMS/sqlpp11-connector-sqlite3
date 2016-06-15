@@ -53,7 +53,7 @@ namespace sqlpp
       using _traits = make_traits<no_value_t, tag::is_return_value>;
       struct _alias_t
       {
-        static constexpr const char _literal[] = "insert_or";
+        static constexpr const char _literal[10] = "insert_or";
         using _name_t = sqlpp::make_char_sequence<sizeof(_literal), _literal>;
       };
 
